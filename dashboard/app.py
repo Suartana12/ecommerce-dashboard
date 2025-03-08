@@ -41,7 +41,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     # Load cleaned data
-    df = pd.read_csv("cleaned_data.csv", parse_dates=["order_purchase_timestamp"])
+    df = pd.read_csv("dashboard/cleaned_data.csv", parse_dates=["order_purchase_timestamp"])
     return df
 
 df = load_data()
